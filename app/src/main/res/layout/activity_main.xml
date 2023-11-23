@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3375" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/search_icon"
+        android:background="@drawable/bg_search"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="18dp"
+        android:paddingTop="5dp"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/kun_logo"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/menu"
+        android:layout_margin="17dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/linkmain"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line_1"
+        app:layout_constraintBottom_toTopOf="@id/txt_main"
+        android:scaleType="centerCrop"
+        android:src="@drawable/linkmain"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/txt_main"
+            app:layout_constraintTop_toBottomOf="@id/linkmain"
+            app:layout_constraintBottom_toTopOf="@id/line_2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="AQSH Markaziy Osiyo davlatlari bilan\n '5+1' formatida biznes platforma\n ishga tushirdi"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_views"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/view_2"
+        app:layout_constraintHeight_percent="0.1125"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line_2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_views" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Izyumdagi vayronagarchilik va Lvivdagi\nharbiy asirlar. Urush suratlari"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="75dp"
+            android:layout_gravity="right"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:src="@drawable/link1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="2023.11.17 | 17:50"
+            android:textColor="#BDC2C2"
+            android:textSize="8sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_views"
+        app:layout_constraintBottom_toTopOf="@id/view_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1125"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_1">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_views" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif"
+            android:text="'Kartoshka puli': u kimlarga va qanday\nasos bo'yicha beriladi"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="75dp"
+            android:layout_gravity="right"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:src="@drawable/link2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="2023.11.15 | 11:10"
+            android:textColor="#BDC2C2"
+            android:textSize="8sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_views"
+        app:layout_constraintBottom_toTopOf="@id/view_4"
+        app:layout_constraintHeight_percent="0.1125"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_views" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Yevropa ittifoqi ekologik jinoyatlar uchun\njazoni kuchaytiradi"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="70dp"
+            android:layout_gravity="right"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:src="@drawable/link3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="2023.11.17 | 14:31"
+            android:textColor="#BDC2C2"
+            android:textSize="8sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_views"
+        app:layout_constraintBottom_toTopOf="@id/view_5"
+        app:layout_constraintHeight_percent="0.1125"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_views" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Bayden AQSHning APEC doirasida\naloqalarini mustahkamlash rejalarini e'lon\nqildi"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="75dp"
+            android:layout_gravity="right"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:src="@drawable/link4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="2023.11.17 | 14:16"
+            android:textColor="#BDC2C2"
+            android:textSize="8sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_views"
+        app:layout_constraintBottom_toTopOf="@id/view_6"
+        app:layout_constraintHeight_percent="0.1125"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_4">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_views" />
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif"
+            android:text="'Onlayn qopqon' - ommalashgan virtual\nfiribgarlik turlari va ulardan qanday\nhimoyalanish kerak"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="75dp"
+            android:layout_gravity="right"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:src="@drawable/link5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="2023.11.17 | 17:50"
+            android:textColor="#BDC2C2"
+            android:textSize="8sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view_6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_views"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.1125"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_views" />
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Turkiya parlamenti Shvetsiyaning\nNATOga kirishi masalasini ko'rib\nchiqishini keyinga qoldirdi"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="75dp"
+            android:layout_gravity="right"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:src="@drawable/link6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="2023.11.17 | 14:13"
+            android:textColor="#BDC2C2"
+            android:textSize="8sp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
